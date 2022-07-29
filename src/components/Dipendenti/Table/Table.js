@@ -17,7 +17,7 @@ export default class Table extends Component {
               <th className='table_head text-center'>Ferie</th>
               <th className='table_head text-center'>Malattia</th>
               <th className='table_head text-center'>Straordirio</th>
-              <th rowspan="2">{directionArrrow}</th>
+              <th style={{ width: '128px' }} className="text-center" rowspan="2">{directionArrrow}</th>
             </tr>
             <tr>
               <th className='table_head_val text-center'>62</th>
@@ -31,46 +31,53 @@ export default class Table extends Component {
           </thead>
 
           <tbody className='table_body'>
-              <tr>
-                <td className='text-center td_head'>Data</td>
-                <td className='text-center td_head'>Entrata</td>
-                <td className='text-center td_head'>Uscita</td>
-                <td className='text-center td_head'>Entrata</td>
-                <td className='text-center td_head'>Uscita</td>
-                <td className='text-center td_head'>Badge</td>
-                <td className='text-center td_head'>Sede</td>
-              </tr>
 
-              <tr className='border my-3'>
-                <td className='text-center td_data'>11/07/22</td>
-                <td className='text-center td_data'>09:45</td>
-                <td className='text-center td_data'>13:02</td>
-                <td className='text-center td_data'>13:58</td>
-                <td className='text-center td_data'>18:15</td>
-                <td className='text-center td_data'>Qr</td>
-                <td className='text-center td_data'>
-                  <span className='by_location text-center justify-content-center d-flex gap-2'>
-                    <span>{locationIcon}</span>
-                    <span>Via Torchicoda n4, ...</span>
-                  </span>
-                </td>
-              </tr>
-              <tr className='border bg-danger m-2'>
-                <td className='text-center td_data'>11/07/22</td>
-                <td className='text-center td_data'>09:45</td>
-                <td className='text-center td_data'>13:02</td>
-                <td className='text-center td_data'>13:58</td>
-                <td className='text-center td_data'>18:15</td>
-                <td className='text-center td_data'>Qr</td>
-                <td className='text-center td_data'>
-                  <span className='by_location text-center justify-content-center d-flex gap-2'>
-                    <span>{locationIcon}</span>
-                    <span>Via Torchicoda n4, ...</span>
-                  </span>
-                </td>
-              </tr>
-            
-            </tbody>
+            <tr>
+              <td className='text-center td_head'>Data</td>
+              <td className='text-center td_head'>Entrata</td>
+              <td className='text-center td_head'>Uscita</td>
+              <td className='text-center td_head'>Entrata</td>
+              <td className='text-center td_head'>Uscita</td>
+              <td className='text-center td_head'>Badge</td>
+              <td className='text-center td_head'>Sede</td>
+              <td className='text-center td_head'></td>
+              <td className='text-center td_head'></td>
+            </tr>
+
+            {/* DATA */}
+            <tr className='m-2'>
+              <td className='text-center td_data'>11/07/22</td>
+              <td className='text-center td_data'>09:45</td>
+              <td className='text-center td_data'>13:02</td>
+              <td className='text-center td_data'>13:58</td>
+              <td className='text-center td_data'>18:15</td>
+              <td className='text-center td_data'>Qr</td>
+              <td className='text-center td_data by_location_box'>
+                <span className='by_location text-center d-flex justify-content-center gap-2 align-items-center'>
+                  <span>{locationIcon}</span>
+                  <span>Via Torchicoda n4, ...</span>
+                </span>
+              </td>
+              <td className=''></td>
+              <td className=''></td>
+            </tr>
+            <tr className='m-2'>
+              <td className='text-center td_data'>11/07/22</td>
+              <td className='text-center td_data'>09:45</td>
+              <td className='text-center td_data'>13:02</td>
+              <td className='text-center td_data'>13:58</td>
+              <td className='text-center td_data'>18:15</td>
+              <td className='text-center td_data'>Qr</td>
+              <td className='text-center td_data by_location_box'>
+                <span className='by_location text-center d-flex justify-content-center gap-2 align-items-center'>
+                  <span>{locationIcon}</span>
+                  <span>Via Torchicoda n4, ...</span>
+                </span>
+              </td>
+              <td className=''></td>
+              <td className=''></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     )

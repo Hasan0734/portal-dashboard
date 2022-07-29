@@ -1,3 +1,6 @@
+.table_area{
+    border-collapse: collapse;
+}
 .table_area .table_main_title {
     font-family: 'Work Sans';
     font-style: normal;
@@ -39,11 +42,14 @@
     line-height: 33px;
     letter-spacing: -0.022em;
     color: #9B9C9D;
+    padding: 10px 0px;
 
 }
 
 .table_area .table_body {
     background: #FAFAFA;
+
+
 
 }
 
@@ -56,9 +62,14 @@
     line-height: 33px;
     letter-spacing: -0.022em;
     color: #49505C;
+    background-color: #fff;
 
 }
 
+.table_area .table_body .by_location_box {
+
+    width: 258px;
+}
 .table_area .table_body .by_location {
     border: 0.5px solid #83C282;
     border-radius: 5px;
@@ -69,5 +80,5 @@
     line-height: 33px;
     letter-spacing: -0.022em;
     color: #5CA96C;
-    width: 232px;
+    width: 100%;
 }

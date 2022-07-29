@@ -5,7 +5,7 @@ export default class Tabs extends Component {
   render() {
     return (
       <div className='tab_area mt-4'>
-        <ul className='tabs d-flex list-unstyled gap-2 w-100'>
+        <ul className='tabs d-flex justify-content-between list-unstyled  w-100'>
           <li className="tab_item">
             <a className='tab_link' href="#profilo">Profilo</a>
           </li>

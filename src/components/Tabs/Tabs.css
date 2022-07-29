@@ -1,6 +1,6 @@
 .tab_area {
     background-color: #FAFAFA;
-    padding: 40px 0px 0px 10px;
+    padding: 40px 10px 0px 10px;
     overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
 
     color: #495057;
     text-decoration: none;
-    padding: 28px 85px;
+    padding: 25px 85px;
 }
 
 .tab_area .tabs .tab_item .tav_active {
