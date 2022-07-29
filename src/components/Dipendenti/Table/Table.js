@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { directionArrrow, location } from '../../../assets/svg/svg'
+import { directionArrrow, location as locationIcon } from '../../../assets/svg/svg'
 import './Table.css'
 export default class Table extends Component {
 
@@ -41,20 +41,35 @@ export default class Table extends Component {
                 <td className='text-center td_head'>Sede</td>
               </tr>
 
-              <tr>
-                <td className='text-center'>11/07/22</td>
-                <td className='text-center'>09:45</td>
-                <td className='text-center'>13:02</td>
-                <td className='text-center'>13:58</td>
-                <td className='text-center'>18:15</td>
-                <td className='text-center'>Qr</td>
-                <td className='text-center'>
-                  <span className='by_location d-flex gap-2'>
-                    <span>{location}</span>
+              <tr className='border my-3'>
+                <td className='text-center td_data'>11/07/22</td>
+                <td className='text-center td_data'>09:45</td>
+                <td className='text-center td_data'>13:02</td>
+                <td className='text-center td_data'>13:58</td>
+                <td className='text-center td_data'>18:15</td>
+                <td className='text-center td_data'>Qr</td>
+                <td className='text-center td_data'>
+                  <span className='by_location text-center justify-content-center d-flex gap-2'>
+                    <span>{locationIcon}</span>
                     <span>Via Torchicoda n4, ...</span>
                   </span>
                 </td>
               </tr>
+              <tr className='border bg-danger m-2'>
+                <td className='text-center td_data'>11/07/22</td>
+                <td className='text-center td_data'>09:45</td>
+                <td className='text-center td_data'>13:02</td>
+                <td className='text-center td_data'>13:58</td>
+                <td className='text-center td_data'>18:15</td>
+                <td className='text-center td_data'>Qr</td>
+                <td className='text-center td_data'>
+                  <span className='by_location text-center justify-content-center d-flex gap-2'>
+                    <span>{locationIcon}</span>
+                    <span>Via Torchicoda n4, ...</span>
+                  </span>
+                </td>
+              </tr>
+            
             </tbody>
         </table>
       </div>
