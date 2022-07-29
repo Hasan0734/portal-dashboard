@@ -1,0 +1,52 @@
+.table_area .table_main_title {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    /* identical to box height, or 183% */
+    letter-spacing: -0.022em;
+    color: #49505C;
+}
+
+.table_area .table_head {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: -0.022em;
+    color: #9B9C9D;
+}
+
+.table_area .table_head_val {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: -0.022em;
+    color: #49505C;
+}
+
+
+.table_area .table_body .td_head {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: -0.022em;
+    color: #9B9C9D;
+
+}
+
+.table_area .table_body {
+    background: #FAFAFA;
+    
+
+}
+.table_area .table_body .by_location {
+    border: 0.5px solid #83C282;
+    
+}

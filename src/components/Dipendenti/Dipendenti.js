@@ -6,6 +6,7 @@ import Tabs from '../Tabs/Tabs';
 import './Dipendenti.css';
 import StatusArea from './StatusArea/StatusArea';
 import { copyIcon } from './../../assets/svg/svg';
+import Table from './Table/Table';
 
 
 export default class Dipendenti extends Component {
@@ -32,8 +33,10 @@ export default class Dipendenti extends Component {
               </div>
             </div>
 
+            {/* Table */}
 
-          
+            <Table/>
+
           </div>
         </div>
       </Layout>
