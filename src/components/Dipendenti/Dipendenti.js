@@ -1,18 +1,19 @@
-import React from 'react'
 import Layout from '../Layout/Layout'
 import StaticButton from '../StaticButton/StaticButton';
+import React, { Component } from 'react'
 
-export default function Dipendenti() {
+export default class Dipendenti extends Component {
+  render() {
     return (
         <Layout>
+        <div>
+            {/* sidebar static button */}
+            <StaticButton />
             <div>
-
-                <StaticButton />
-
-                <div>
-
-                </div>
+                
             </div>
-        </Layout>
+        </div>
+    </Layout>
     )
+  }
 }

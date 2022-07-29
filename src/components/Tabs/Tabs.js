@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-const Tabs = () => {
+export default class Tabs extends Component {
+  render() {
     return (
-        <div>
-            
-        </div>
-    );
+      <div>Tabs</div>
+    )
+  }
 }
-
-export default Tabs;
