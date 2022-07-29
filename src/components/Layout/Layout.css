@@ -1,0 +1,9 @@
+.sidebar{
+    width: 16%;
+}
+.main_body{
+    width: 84%;
+    padding-left: 130px;
+    padding-top: 50px;
+    padding-right: 150px;
+}

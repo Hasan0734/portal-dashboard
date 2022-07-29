@@ -7,13 +7,22 @@ export default function Layout({ children }) {
     return (
         <>
             <Banner />
+            <div className='d-flex w-100'>
 
-            <div className='d-flex'>
-                <Sidebar />
-
-                <div className=''>
-                    {children}
+                {/* sidebar start  */}
+                <div className='sidebar'>
+                    <Sidebar />
                 </div>
+
+                {/* sidebar end  */}
+
+                {/* main body section  start*/}
+
+                <main className='main_body ms-5'>
+                    {/* pass the children */}
+                    {children}
+                </main>
+                {/* main body section  end*/}
             </div>
         </>
     )

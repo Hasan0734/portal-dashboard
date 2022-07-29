@@ -1,12 +1,10 @@
 import './App.css';
+import Dipendenti from './components/Dipendenti/Dipendenti';
 import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-
-    <Layout>
-      <h1>Hello world thsi body</h1>
-    </Layout>
+    <Dipendenti/>
 
   );
 }

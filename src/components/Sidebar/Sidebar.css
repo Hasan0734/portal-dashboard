@@ -1,8 +1,9 @@
 .sidebar_area {
     background: #FFFFFF;
     box-shadow: 5px 4px 4px rgb(0 0 0 / 10%);
-    width: 16%;
+    width: 100%;
     padding: 20px;
+    height: 100vh;
 }
 
 .logo_area {
@@ -54,9 +55,30 @@
     padding: 4px 8px;
     display: inline-block;
     width: 100%;
+    cursor: pointer;
 }
 
-.sidebar_content .nav_item.nav_active {
+.sidebar_content .nav_item .nav_active {
     background: #5CA96C !important;
     color: white !important;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.xl_sidebar {
+    display: block;
+}
+
+.sm_sidebar {
+    display: none;
+}
+
+@media  screen and (max-width: 1400px) {
+    .sidebar_area .xl_sidebar {
+        display: none;
+    }
+
+    .sidebar_area .sm_sidebar {
+        display: block;
+    }
 }
