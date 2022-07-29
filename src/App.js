@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <button className='btn btn-primary mt-3'>Click me</button>
-    </div>
+
+    <Layout>
+      <h1>Hello world thsi body</h1>
+    </Layout>
+
   );
 }
 
