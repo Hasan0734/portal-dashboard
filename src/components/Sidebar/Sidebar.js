@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Sidebar.css";
 import { sidebars } from "./sidebarData";
 
 export default class Sidebar extends Component {
+    
   render() {
+    const location = useLocation()
     return (
       <aside className="sidebar_area">
         <div className="logo_area text-center">
