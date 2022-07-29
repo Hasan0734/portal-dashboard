@@ -10,7 +10,7 @@ export default class App extends Component {
       <BrowserRouter>
         <Route exact path="/" component={Dashboard} />
         <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/dipendenti" component={Dipendenti} />
+        <Route exact path="/dependenti" component={Dipendenti} />
       </BrowserRouter>
     );
   }

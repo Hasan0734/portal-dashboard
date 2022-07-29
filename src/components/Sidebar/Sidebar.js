@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Sidebar.css";
 import { sidebars } from "./sidebarData";
+import PropTypes from "prop-types";
+import { withRouter } from "react-router";
 
-export default class Sidebar extends Component {
-    
+ export default class Sidebar extends Component {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
   render() {
-    const location = useLocation()
+    console.log(this.props)
     return (
       <aside className="sidebar_area">
         <div className="logo_area text-center">
@@ -94,3 +99,5 @@ export default class Sidebar extends Component {
     );
   }
 }
+
+const ShowTheLocationWithRouter = withRouter(Sidebar);
