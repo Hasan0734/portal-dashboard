@@ -18,15 +18,14 @@ export default class Table extends Component {
    this.setState({isOpen: !this.state.isOpen})
   }
   render() {
-
-  console.log(this.state.isOpen)
+    const {body,title, ore_totali, ore_mensili, differenza, permesi, ferie, malattia, straordirio} = this.props.data
     return (
-      <div className="mt-3 border-bottom  border-1">
+      <div className="mt-3 border-bottom ">
         <table className="table_area w-100">
           <thead className="mb-2">
             <tr>
               <th className="table_main_title" rowspan="2">
-                {this.props.title}
+                {title}
               </th>
               <th className="table_head text-center">Ore totali</th>
               <th className="table_head text-center">Ore Mensili</th>
@@ -47,19 +46,19 @@ export default class Table extends Component {
               </th>
             </tr>
             <tr>
-              <th className="table_head_val text-center">62</th>
-              <th className="table_head_val text-center">120</th>
-              <th className="table_head_val text-center">58h</th>
-              <th className="table_head_val text-center">1h</th>
-              <th className="table_head_val text-center">12h</th>
-              <th className="table_head_val text-center">0h</th>
-              <th className="table_head_val text-center">0h</th>
+              <th className="table_head_val text-center">{ore_totali}</th>
+              <th className="table_head_val text-center">{ore_mensili}</th>
+              <th className="table_head_val text-center">{differenza}h</th>
+              <th className="table_head_val text-center">{permesi}h</th>
+              <th className="table_head_val text-center">{ferie}h</th>
+              <th className="table_head_val text-center">{malattia}h</th>
+              <th className="table_head_val text-center">{straordirio}h</th>
             </tr>
           </thead>
           <br />
 
-          {this.props.body.length > 0 && this.state.isOpen && (
-            <tbody className="table_body">
+          {body.length > 0 && this.state.isOpen && (
+            <tbody className="table_body border-top">
               <tr>
                 <td className="text-center td_head">Data</td>
                 <td className="text-center td_head">Entrata</td>
@@ -73,7 +72,7 @@ export default class Table extends Component {
               </tr>
 
               {/* data list */}
-              {this.props.body.map((dt, i) => (
+              {body?.map((dt, i) => (
                 <TableData key={dt.id} body={dt} />
               ))}
             </tbody>

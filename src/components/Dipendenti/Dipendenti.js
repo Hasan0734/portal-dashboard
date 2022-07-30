@@ -34,7 +34,7 @@ export default class Dipendenti extends Component {
 
             {/* Table */}
 
-            {tableData.map((dt, i) => <Table key={dt.id} title={dt.title} body={dt.body} />)}
+            {tableData.map((dt, i) => <Table key={dt.id} data={dt} />)}
               
             
           </div>
