@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ChevronDown } from "react-feather";
 import { directionArrrow } from "../../../assets/svg/svg";
 
 import "./Table.css";
@@ -6,10 +7,21 @@ import TableData from "./TableData";
 
 export default class Table extends Component {
 
+  constructor(props){
+    super(props)
+    this.state = {
+      isOpen: false
+    }
+  }
 
+  handleCollapse =()=> {
+    this.useState({
+      isOpen: !this.state.isOpen
+    })
+  }
   render() {
 
-  
+  console.log(this.state.isOpen)
     return (
       <div className="mt-3">
         <table className="table_area w-100">
@@ -30,7 +42,7 @@ export default class Table extends Component {
                 className="text-center"
                 rowspan="2"
               >
-                <button onClick={() => handleCollapse()} className="table_collapse_btn">{directionArrrow}</button>
+                <button onClick={() => this.handleCollapse()} className="table_collapse_btn">{ this.state.isOpen ? directionArrrow : <ChevronDown/>}</button>
               </th>
             </tr>
             <tr>
