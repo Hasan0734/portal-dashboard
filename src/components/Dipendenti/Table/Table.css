@@ -1,7 +1,8 @@
-.table_area{
+.table_area {
     border-collapse: collapse;
 }
-.table_area .table_main_title {
+
+ .table_main_title {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -13,7 +14,7 @@
     width: 160px;
 }
 
-.table_area .table_head {
+ .table_head {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -23,7 +24,7 @@
     color: #9B9C9D;
 }
 
-.table_area .table_head_val {
+ .table_head_val {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -34,7 +35,7 @@
 }
 
 
-.table_area .table_body .td_head {
+.table_body .td_head {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -42,19 +43,17 @@
     line-height: 33px;
     letter-spacing: -0.022em;
     color: #9B9C9D;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 
 }
 
-.table_area .table_body {
+.table_body {
     background: #FAFAFA;
-
-
-
+    border: 23px solid #fafafa;
 }
 
 
-.table_area .table_body .td_data {
+.table_body .td_data {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -68,11 +67,12 @@
 
 }
 
-.table_area .table_body .by_location_box {
+.table_body .by_location_box {
 
     width: 258px;
 }
-.table_area .table_body .by_location {
+
+ .table_body .by_location {
     border: 0.5px solid #83C282;
     border-radius: 5px;
     font-family: 'Work Sans';
