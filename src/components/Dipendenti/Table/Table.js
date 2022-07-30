@@ -14,16 +14,14 @@ export default class Table extends Component {
     }
   }
 
-  handleCollapse =()=> {
-    this.useState({
-      isOpen: !this.state.isOpen
-    })
+  handleCollapse = ()=> {
+   this.setState({isOpen: !this.state.isOpen})
   }
   render() {
 
   console.log(this.state.isOpen)
     return (
-      <div className="mt-3">
+      <div className="mt-3 border-bottom  border-1">
         <table className="table_area w-100">
           <thead className="mb-2">
             <tr>
@@ -42,7 +40,10 @@ export default class Table extends Component {
                 className="text-center"
                 rowspan="2"
               >
-                <button onClick={() => this.handleCollapse()} className="table_collapse_btn">{ this.state.isOpen ? directionArrrow : <ChevronDown/>}</button>
+                <button 
+                onClick={() => this.handleCollapse()}
+                 className="table_collapse_btn">
+                  { this.state.isOpen ? directionArrrow : <ChevronDown color="#495057" strokeWidth={3} size={30}/>}</button>
               </th>
             </tr>
             <tr>
@@ -57,7 +58,7 @@ export default class Table extends Component {
           </thead>
           <br />
 
-          {this.props.body.length > 0 && (
+          {this.props.body.length > 0 && this.state.isOpen && (
             <tbody className="table_body">
               <tr>
                 <td className="text-center td_head">Data</td>
