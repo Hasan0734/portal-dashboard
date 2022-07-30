@@ -8,7 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/" component={Dipendenti} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/dependenti" component={Dipendenti} />
       </BrowserRouter>

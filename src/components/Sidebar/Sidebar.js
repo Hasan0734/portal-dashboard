@@ -5,14 +5,14 @@ import { sidebars } from "./sidebarData";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router";
 
- export default class Sidebar extends Component {
+export default class Sidebar extends Component {
   static propTypes = {
     match: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
+    history: PropTypes.object.isRequired,
   };
   render() {
-    console.log(this.props)
+    console.log(this.props);
     return (
       <aside className="sidebar_area">
         <div className="logo_area text-center">
@@ -49,7 +49,7 @@ import { withRouter } from "react-router";
                           {" "}
                           {item.icon}
                         </span>
-                        {item.name}
+                        <span className="nev_link_text"> {item.name}</span>
                       </a>
                     </li>
                   ))}
