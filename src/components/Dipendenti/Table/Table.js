@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import {
-  directionArrrow,
-} from "../../../assets/svg/svg";
-
+import { directionArrrow } from "../../../assets/svg/svg";
 
 import "./Table.css";
 import TableData from "./TableData";
 
 export default class Table extends Component {
+
+
   render() {
+
+  
     return (
       <div className="mt-3">
         <table className="table_area w-100">
@@ -29,7 +30,7 @@ export default class Table extends Component {
                 className="text-center"
                 rowspan="2"
               >
-                {directionArrrow}
+                <button onClick={() => handleCollapse()} className="table_collapse_btn">{directionArrrow}</button>
               </th>
             </tr>
             <tr>
@@ -43,8 +44,9 @@ export default class Table extends Component {
             </tr>
           </thead>
           <br />
-      
-           {this.props.body.length > 0 && <tbody className="table_body">
+
+          {this.props.body.length > 0 && (
+            <tbody className="table_body">
               <tr>
                 <td className="text-center td_head">Data</td>
                 <td className="text-center td_head">Entrata</td>
@@ -58,10 +60,11 @@ export default class Table extends Component {
               </tr>
 
               {/* data list */}
-              {this.props.body.map((dt, i) => <TableData key={dt.id} body={dt}/> )}
-
-            </tbody>}
-      
+              {this.props.body.map((dt, i) => (
+                <TableData key={dt.id} body={dt} />
+              ))}
+            </tbody>
+          )}
         </table>
       </div>
     );

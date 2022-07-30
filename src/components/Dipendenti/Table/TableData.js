@@ -4,18 +4,19 @@ import {location as locationIcon,
 import "./Table.css";
 export default class TableData extends Component {
   render() {
+    const {data, entrata, uscita, entrata2,uscita2,badge, sede} = this.props.body
     return (
       <tr className="m-2">
-        <td className="text-center td_data">11/07/22</td>
-        <td className="text-center td_data">09:45</td>
-        <td className="text-center td_data">13:02</td>
-        <td className="text-center td_data">13:58</td>
-        <td className="text-center td_data">18:15</td>
-        <td className="text-center td_data">Qr</td>
+        <td className="text-center td_data">{data}</td>
+        <td className="text-center td_data">{entrata}</td>
+        <td className="text-center td_data">{uscita}</td>
+        <td className="text-center td_data">{entrata2}</td>
+        <td className="text-center td_data">{uscita2}</td>
+        <td className="text-center td_data">{badge}</td>
         <td className="text-center td_data by_location_box">
           <span className="by_location text-center d-flex justify-content-center gap-2 align-items-center">
             <span>{locationIcon}</span>
-            <span>Via Torchicoda n4, ...</span>
+            <span>{sede}</span>
           </span>
         </td>
         <td className=""></td>

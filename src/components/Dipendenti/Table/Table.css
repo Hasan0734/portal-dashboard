@@ -84,3 +84,8 @@
     color: #5CA96C;
     width: 100%;
 }
+.table_collapse_btn{
+    border: none;
+    outline: none;
+    background: none;
+}
